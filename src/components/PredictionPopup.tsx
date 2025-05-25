@@ -70,13 +70,34 @@ const PredictionPopup: React.FC<PredictionPopupProps> = ({
         >
           <div className={styles.formGrid}>
             <div className={styles.formField}>
-              <label>Clave de Plaza<input required type="number" value={formData.PLAZA_CVE} onChange={e => setFormData((f: any) => ({ ...f, PLAZA_CVE: e.target.value }))} /></label>
+              <label>Clave de Plaza
+                <select required value={formData.PLAZA_CVE} onChange={e => setFormData((f: any) => ({ ...f, PLAZA_CVE: e.target.value }))}>
+                  <option value="">Seleccionar...</option>
+                  {[1,2,3,4,5,6].map(num => (
+                    <option key={num} value={num}>{num}</option>
+                  ))}
+                </select>
+              </label>
             </div>
             <div className={styles.formField}>
-              <label>Nivel Socioeconómico<input required type="text" value={formData.NIVELSOCIOECONOMICO_DES} onChange={e => setFormData((f: any) => ({ ...f, NIVELSOCIOECONOMICO_DES: e.target.value }))} /></label>
+              <label>Nivel Socioeconómico
+                <select required value={formData.NIVELSOCIOECONOMICO_DES} onChange={e => setFormData((f: any) => ({ ...f, NIVELSOCIOECONOMICO_DES: e.target.value }))}>
+                  <option value="">Seleccionar...</option>
+                  {['A','AB','B','BC','C','CD','D'].map(nivel => (
+                    <option key={nivel} value={nivel}>{nivel}</option>
+                  ))}
+                </select>
+              </label>
             </div>
             <div className={styles.formField}>
-              <label>Entorno<input required type="text" value={formData.ENTORNO_DES} onChange={e => setFormData((f: any) => ({ ...f, ENTORNO_DES: e.target.value }))} /></label>
+              <label>Entorno
+                <select required value={formData.ENTORNO_DES} onChange={e => setFormData((f: any) => ({ ...f, ENTORNO_DES: e.target.value }))}>
+                  <option value="">Seleccionar...</option>
+                  {['Base', 'Hogar', 'Peatonal', 'Receso'].map(entorno => (
+                    <option key={entorno} value={entorno}>{entorno}</option>
+                  ))}
+                </select>
+              </label>
             </div>
             <div className={styles.formField}>
               <label>m² de ventas<input required type="number" step="0.01" value={formData.MTS2VENTAS_NUM} onChange={e => setFormData((f: any) => ({ ...f, MTS2VENTAS_NUM: e.target.value }))} /></label>
@@ -94,10 +115,24 @@ const PredictionPopup: React.FC<PredictionPopupProps> = ({
               <label>Longitud<input required type="number" value={formData.LONGITUD_NUM} readOnly /></label>
             </div>
             <div className={styles.formField}>
-              <label>Segmento Maestro<input required type="text" value={formData.SEGMENTO_MAESTRO_DESC} onChange={e => setFormData((f: any) => ({ ...f, SEGMENTO_MAESTRO_DESC: e.target.value }))} /></label>
+              <label>Segmento Maestro
+                <select required value={formData.SEGMENTO_MAESTRO_DESC} onChange={e => setFormData((f: any) => ({ ...f, SEGMENTO_MAESTRO_DESC: e.target.value }))}>
+                  <option value="">Seleccionar...</option>
+                  {['Hogar Reunión', 'Barrio competido', 'Oficinistas', 'Clásico', 'Parada Técnica', 'NA'].map(segmento => (
+                    <option key={segmento} value={segmento}>{segmento}</option>
+                  ))}
+                </select>
+              </label>
             </div>
             <div className={styles.formField}>
-              <label>LID Ubicación Tienda<input required type="text" value={formData.LID_UBICACION_TIENDA} onChange={e => setFormData((f: any) => ({ ...f, LID_UBICACION_TIENDA: e.target.value }))} /></label>
+              <label>LID Ubicación Tienda
+                <select required value={formData.LID_UBICACION_TIENDA} onChange={e => setFormData((f: any) => ({ ...f, LID_UBICACION_TIENDA: e.target.value }))}>
+                  <option value="">Seleccionar...</option>
+                  {['UT_CARRETERA_GAS', 'UT_TRAFICO_VEHICULAR', 'UT_DENSIDAD'].map(ubicacion => (
+                    <option key={ubicacion} value={ubicacion}>{ubicacion}</option>
+                  ))}
+                </select>
+              </label>
             </div>
           </div>
           <button type="submit" className={styles.submitButton} disabled={formLoading}>{formLoading ? 'Prediciendo...' : 'Predecir'}</button>

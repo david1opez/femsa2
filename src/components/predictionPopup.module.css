@@ -46,6 +46,21 @@
     padding: 2px 8px;
 }
 
+.formField select {
+    margin-left: 1rem;
+    border: 2px solid #FCB011;
+    color: black;
+    border-radius: 4px;
+    padding: 2px 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.formField select:focus {
+    outline: none;
+    border-color: #FCB011;
+}
+
 /* Remove up/down arrows from number inputs */
 .formField input[type="number"]::-webkit-inner-spin-button,
 .formField input[type="number"]::-webkit-outer-spin-button {
