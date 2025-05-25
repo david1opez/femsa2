@@ -1,0 +1,127 @@
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 25% calc(75% - 1.5rem);
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.marker {
+    transform: translateY(50%);
+}
+
+.sidebar {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    pointer-events: auto;
+    padding: 2rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #e6e6e6 transparent;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 1;
+    color: #ED1600;
+}
+
+.divider {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #FCB011;
+    border-bottom: 1px solid #FCB011;
+    margin: 1rem 0;
+    padding: 0 0 0.6rem 0.3rem;
+}
+
+.bottombar {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-self: flex-end;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    pointer-events: auto;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.label {
+    color: #ED1600;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.image {
+    height: calc(100% - 2rem);
+    width: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+}
+
+.graphContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120%;
+    margin-right: 2rem;
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ED1600;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}

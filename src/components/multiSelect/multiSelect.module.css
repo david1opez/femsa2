@@ -1,0 +1,39 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    color: #ED1600;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.optionsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.option {
+    border: 2px solid #ED1600;
+    color: #ED1600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: white;
+}
+
+.option label {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #ED1600;
+    color: white;
+}

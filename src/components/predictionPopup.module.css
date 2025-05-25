@@ -1,0 +1,77 @@
+.popupContainer {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
+  z-index: 1000;
+  background: #ED1600;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border: 5px solid white;
+}
+
+.closeButton {
+  float: right;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.title {
+  cursor: move;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.formGrid {
+
+}
+
+.formField {
+    display: flex;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.formField input {
+    margin-left: 1rem;
+    border: 2px solid #FCB011;
+    color: black;
+    border-radius: 4px;
+    padding: 2px 8px;
+}
+
+.submitButton {
+  margin-top: 16px;
+  background-color: #FCB011;
+  outline: none;
+  color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin-top: 8px;
+}
+
+.predictionResult {
+  margin-top: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.predictionResult.rentable {
+  color: green;
+}
+
+.predictionResult.notRentable {
+  color: red;
+}

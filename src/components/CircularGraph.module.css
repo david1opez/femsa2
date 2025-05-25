@@ -1,0 +1,65 @@
+.circularGraphContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 260px;
+}
+
+.svg {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.progress {
+  transition: stroke-dashoffset 0.5s;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ED1600;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.info {
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #FCB011;
+  color: #FCB011;
+  font-size: 0.55em;
+  font-weight: bold;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 0.9rem;
+  text-align: center;
+  margin-left: 0.3em;
+  vertical-align: middle;
+}
+
+.values {
+  font-size: 1em;
+  margin-top: 0.2em;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.current {
+  color: #ED1600;
+  font-weight: bold;
+}
+
+.divider {
+  color: #222;
+  margin: 0 0.2em;
+}
+
+.total {
+  color: #111;
+  font-weight: 500;
+}

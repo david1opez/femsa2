@@ -1,0 +1,39 @@
+.container {}
+
+.labelContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.label {
+    color: #ED1600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.infoButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FCB011;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    color: #FCB011;
+    font-family: 'Poppins', sans-serif;
+    font-size: 7px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.value {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.description {}
