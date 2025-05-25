@@ -55,11 +55,6 @@ const CircularGraph: React.FC<CircularGraphProps> = ({ percentage, current, tota
         </text>
       </svg>
       <div className={styles.label}>Cumplimiento de Metas <span className={styles.info}>?</span></div>
-      <div className={styles.values}>
-        <span className={styles.current}>{current.toLocaleString('en-US')}</span>
-        <span className={styles.divider}>/</span>
-        <span className={styles.total}>{total.toLocaleString('en-US')}</span>
-      </div>
     </div>
   );
 };
