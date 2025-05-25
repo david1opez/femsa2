@@ -3,13 +3,17 @@ import { useEffect, useState } from 'react';
 
 import styles from './multiSelect.module.css';
 
-export default function MultiSelect({ label, options, onChange }: {
+export default function MultiSelect({ label, options, selected, onChange }: {
     label: string;
     options: { value: string; label: string }[];
     selected: string[];
     onChange: (selected: string[]) => void;
 }) {
-    const [selectedOptions, setSelectedOptions] = useState(options);
+    const [selectedOptions, setSelectedOptions] = useState<string[]>(selected);
+
+    useEffect(() => {
+        setSelectedOptions(selected);
+    }, [selected]);
 
     return (
         <div className={styles.container}>

@@ -1,7 +1,7 @@
 import Icons from './icons.json';
 
 // TYPES
-import { IconProps, IconType } from '@/types/IconTypes';
+import { IconProps, IconType } from './IconTypes';
 
 export default function Icon({ size, color, name, strokeWidth, className, style, onClick, onMouseEnter, onMouseLeave }: IconProps) {
     const Icon: IconType = Icons[name] as IconType;
